@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&family=Poppins:wght@200;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/*### Neutral*/
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body {
+    background-color: var(--Very-Light-Gray);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--Grayish-Blue);
+}
+header {
+    text-align: center;
+}
+header p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+h1 {
+    font-weight: 200;
+    font-size: 34px;
+    color: var(--Very-Dark-Blue);
+}
+h2 {
+    font-weight: 600;
+    font-size: 34px;
+    color: var(--Very-Dark-Blue);
+}
+h3 {
+    font-size: 20px;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 10px;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+/*************************** Class Selector **********************/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px ;
+}
+.box-container {
+    display: flex;
+    flex-direction: column;
+    column-gap: 25px;
+}
+.box {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 30px;
+    text-align: right;
+}
+.box1 {
+    border-top: solid 5px var(--Cyan);
+}
+.box2 {
+    border-top: solid 5px var(--Red);
+}
+.box3 {
+    border-top: solid 5px var(--Orange);
+}
+.box4 {
+    border-top: solid 5px var(--Blue);
+}
+.box1, .box4 {
+    align-self: center;
+}
+.box-text {
+    text-align: left;
+    margin-bottom: 40px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media only screen and (max-width:768px) {
+    main {
+       grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width:425px) {
+    body {
+       font-size: 1px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .box {
+        padding: 20px;
+
+    }
+    .box-text {
+        padding-bottom: 20px;
+    }
+    p {
+        font-size: 11px;
+    }
+}
